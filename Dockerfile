@@ -16,6 +16,8 @@ FROM base AS builder
 ARG NOTION_PAGE_ID
 ENV NEXT_BUILD_STANDALONE=true
 
+ENV  NEXT_PUBLIC_COMMENT_CUSDIS_APP_ID=e07bba78-3684-41c1-869b-3c4febf7dc72
+
 WORKDIR /app
 
 COPY --from=deps /app/node_modules ./node_modules
